@@ -1,0 +1,25 @@
+info:
+  name: crear cliente sql
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: http://localhost:5000/api/crearclientsql
+  body:
+    type: json
+    data: |-
+      {
+        "nombre":"dario",
+        "apellidos":"costas costas",
+        "telefono":"987251111",
+        "direccion": "calle ave paraiso",
+        "correo":"dario@example.com"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
